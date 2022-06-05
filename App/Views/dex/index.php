@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-  <title>DLUX - DEX</title>
+  <title>DBUZZ Market - DEX</title>
   <?php
   $path = $_SERVER['DOCUMENT_ROOT'];
   $path .= "/mod/header.php";
