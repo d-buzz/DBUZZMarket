@@ -127,14 +127,13 @@ if ( isset( $author ) ) {
               </div>
             </div>
           </div>
-          <div class="col-md-4 text-center m-auto"> <a target="_blank" class="btn btn-outline-primary btn-lg m-1" role="button" dmx-bind:href="/vr/@{{dluxGetAccount.data.result[0].name}}">VR Page<i class="fas fa-vr-cardboard mx-2 fa-lg"></i></a>
+          <div class="col-md-4 text-center m-auto">
             <button type="button" class="btn btn-outline-primary dropdown-toggle drop-no-arrow btn-lg" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Actions<i class="fas fa-ellipsis-h ml-2"></i></button>
-            <div class="dropdown-menu nav-item dropdown-menu-right"> <a class="dropdown-item" type="button">Follow</a> <a class="dropdown-item" type="button">Unfollow</a> <a class="dropdown-item" type="button">Send DLUX</a> <a class="dropdown-item" type="button" href="#settings">Settings</a></div>
+            <div class="dropdown-menu nav-item dropdown-menu-right"> <a class="dropdown-item" type="button">Follow</a> <a class="dropdown-item" type="button">Unfollow</a> <a class="dropdown-item" type="button">Send DLUX</a></div>
           </div>
         </div>
         <!-- nav tabs -->
         <ul id="usertabs" class="nav nav-tabs bg-darker mx-0 px-0 mt-5 border-bottom-0" role="tablist">
-          <li class="nav-item"> <a class="nav-link active" id="blogtab" role="tab" data-toggle="tab" aria-controls="blog" aria-expanded="true" href="#blog">Blog</a></li>
           <li class="nav-item"> <a class="nav-link" id="wallettab" role="tab" data-toggle="tab" aria-controls="wallet" aria-expanded="true" href="#wallet">Wallet</a></li>
           <li class="nav-item"> <a class="nav-link" id="inventorytab" role="tab" data-toggle="tab" aria-controls="inventory" aria-expanded="true" href="#inventory">Inventory</a></li>
           <li class="nav-item"> <a class="nav-link" id="nodestab" role="tab" data-toggle="tab" aria-controls="nodes" aria-expanded="true" href="#nodes">Nodes</a></li>
@@ -146,106 +145,6 @@ if ( isset( $author ) ) {
     <div class="tab-content bg-color">
       <!-- blog tab -->
       <div role="tabpanel" class="tab-pane fade show active" id="blog" aria-labelledby="blogtab">
-        <!-- blog repeat -->
-        <div class="card-columns p-3" id="blogResult" is="dmx-repeat" dmx-bind:repeat="dluxGetBlog.data.result">
-          <div class="card text-white bg-dark mt-2 mb-3">
-            <div class="card-header">
-              <div class="d-inline-block">
-                <div class="float-left" ><a dmx-bind:href="/@{{author}}"><img dmx-bind:src="https://images.hive.blog/u/{{author}}/avatar" alt="" class="rounded-circle bg-light img-fluid mr-2 cover author-img"></a></div>
-                <div class="float-left">
-                  <p class="mt-0 mb-0 text-muted text-semibold"><a dmx-bind:href="/@{{author}}" class="a-1">{{author}}<span class="ml-2 badge badge-pill badge-light">{{author_reputation.toString().rep()}}</span></a></p>
-                  <small class="text-muted">{{created.formatDate("MMM dd, yyyy")}}</small></div>
-              </div>
-              <div class="float-right"><span class="badge badge-secondary">{{json_metadata.scat()}}</span></div>
-            </div>
-            <a href="#detailModal" class="a-1" data-toggle="modal" dmx-on:click="data_detail.select(url)" dmx-bind:onclick="window.history.pushState('{{url}}','{{title}}', '/blog/@{{author}}/{{permlink}}');">
-              <h5 class="card-title mt-2 text-center text-capitalize">{{title}}</h5>
-              <img src="..."  alt="Card image cap" class="card-img-top" dmx-bind:src="{{json_metadata.parseJSON().picFind()}}" /></a>
-            <div class="card-body"><a href="#detailModal" class="a-1" data-toggle="modal" dmx-on:click="data_detail.select(url)" dmx-bind:onclick="window.history.pushState('{{url}}','{{title}}', '/blog/@{{author}}/{{permlink}}');">
-              <p class="preview-text">{{body.removeMD().trunc(100,true,"...")}}</p>
-            </a></div>
-            <center>
-              <a dmx-bind:href="{{url}}" type="button" class="btn btn-outline-danger mb-4 btn-launch" target="_blank">Launch App</a>
-            </center>
-            <div class="card-footer">
-              <div class="collapse" dmx-bind:id="vote{{post_id}}">
-                <form id="voteForm">
-                  <div class="d-flex align-items-center text-white-50">
-                    <div>
-                      <button type="button" class="btn btn-primary" dmx-bind:id="voteBtn{{post_id}}" dmx-bind:onclick="vote('{{author}}','{{permlink}}','slider{{post_id}}')">100%</button>
-                      <button type="button" class="btn btn-secondary" data-toggle="collapse" dmx-bind:data-target="{{&quot;#&quot;}}vote{{post_id}}"><span class="close text-white">×</span></button>
-                    </div>
-                    <div class="flex-fill mx-2">
-                      <p class="my-1">
-                        <input type="range" class="form-control-range" step="0.01" value="100" dmx-bind:id="slider{{post_id}}" dmx-bind:onchange="updateVoteSubmit('voteBtn{{post_id}}','slider{{post_id}}');">
-                      </p>
-                    </div>
-                    <div>
-                      <p class="my-0"><span class="mr-1"  id="commentVal">0</span><i class="ml-1 fab fa-fw fa-hive"></i></p>
-                    </div>
-                  </div>
-                </form>
-              </div>
-              <div class="d-flex align-items-center my-2">
-                <div><a data-toggle="collapse" dmx-bind:data-target="{{&quot;#&quot;}}vote{{post_id}}"><i class="fas fa-heart fa-fw mr-1" style="color: {{active_votes.hasVoted('disregardfiat')}}"></i></a>{{active_votes.countUpVotes()}}<i class="fas fa-comment fa-fw ml-2 mr-1"></i>{{children}}</div>
-                <div class="ml-auto">{{total_payout_value}}<i class="ml-1 fab fa-fw fa-hive"></i></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- blog detail -->
-        <dmx-data-detail id="data_detail" dmx-bind:data="dluxGetBlog.data.result" key="url">
-          <div class="modal fade" id="detailModal" tabindex="11" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-full modal-xl modal-dialog-centered" role="document">
-              <div class="modal-content bg-dark text-white">
-                <div class="card text-white bg-dark">
-                  <div class="card-header">
-                    <div class="d-inline-block p-2">
-                      <div class="float-left" ><a dmx-bind:href="/@{{data_detail.data.author}}"><img dmx-bind:src="https://images.hive.blog/u/{{data_detail.data.author}}/avatar" alt="" class="rounded-circle bg-light img-fluid mr-2 cover author-img"></a></div>
-                      <div class="float-left">
-                        <p class="mt-0 mb-0 text-muted text-semibold"><a dmx-bind:href="/@{{data_detail.data.author}}" class="a-1">{{data_detail.data.author}}<span class="ml-2 badge badge-pill badge-light">{{data_detail.data.author_reputation.toString().rep()}}</span></a></p>
-                        <small class="text-muted">{{data_detail.data.created.formatDate("MMM dd, yyyy")}}</small></div>
-                    </div>
-                    <div class="float-right p-2"><span class="badge badge-secondary">{{data_detail.data.json_metadata.scat()}}</span>
-                      <button type="button" class="close text-white ml-3" data-dismiss="modal" aria-label="Close" onclick="window.history.back();"><span aria-hidden="true">×</span></button>
-                    </div>
-                  </div>
-                  <a dmx-bind:href="/blog/@{{data_detail.data.author}}/{{data_detail.data.permlink}}" class="text-white">
-                    <h3 class="text-center p-2">{{data_detail.data.title}}</h3>
-                  </a> <img src="..."  alt="Card image cap" class="card-img-top" dmx-bind:src="{{data_detail.data.json_metadata.parseJSON().picFind()}}" />
-                  <div class="card-body">
-                    <p class="p-2">{{data_detail.data.body.removeMD()}}</p>
-                  </div>
-                  <center>
-                    <a dmx-bind:href="{{data_detail.data.url}}" type="button" class="btn btn-outline-danger mb-4 btn-launch">Launch App</a>
-                  </center>
-                  <div class="card-footer">
-                    <div class="collapse" dmx-bind:id="vote{{post_id}}">
-                      <form id="voteForm">
-                        <div class="d-flex align-items-center text-white-50">
-                          <div>
-                            <button type="button" class="btn btn-primary" dmx-bind:id="voteBtn{{post_id}}" dmx-bind:onclick="vote('{{comment.author}}','{{data_detail.data.comment.permlink}}','slider{{post_id}}')">100%</button>
-                            <button type="button" class="btn btn-secondary" data-toggle="collapse" dmx-bind:data-target="{{&quot;#&quot;}}vote{{post_id}}"><span class="close text-white">×</span></button>
-                          </div>
-                          <div class="flex-fill mx-2">
-                            <p class="my-1">
-                              <input type="range" class="form-control-range" step="0.01" value="100" dmx-bind:id="slider{{post_id}}" dmx-bind:onchange="updateVoteSubmit('voteBtn{{post_id}}','slider{{post_id}}');">
-                            </p>
-                          </div>
-                          <p class="my-0"><span class="mr-1"  id="commentVal">0</span><i class="ml-1 fab fa-fw fa-hive"></i></p>
-                        </div>
-                      </form>
-                    </div>
-                    <div class="d-flex align-items-center my-2">
-                      <div><a data-toggle="collapse" dmx-bind:data-target="{{&quot;#&quot;}}vote{{post_id}}"><i class="fas fa-heart mr-1"></i></a>{{data_detail.data.active_votes.countUpVotes()}}<i class="fas fa-fw fa-comment ml-2 mr-1"></i>{{data_detail.data.children}}</div>
-                      <div class="ml-auto">{{data_detail.data.total_payout_value}}<i class="ml-1 fab fa-fw fa-hive"></i></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </dmx-data-detail>
       </div>
       <!-- wallet tab -->
       <div role="tabpanel" class="tab-pane fade show" id="wallet" aria-labelledby="wallettab">

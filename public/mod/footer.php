@@ -7,19 +7,19 @@
         <div class="mb-5 ">
 		
           <!-- Github -->
-          <a href="https://github.com/dluxio" target="_blank">
+          <a href="https://github.com/d-buzz" target="_blank">
             <i class="fab fa-github fa-lg mx-md-3 mx-2 fa-2x"></i>
           </a>
           <!-- Discord -->
-          <a href="https://discord.gg/Beeb38j" target="_blank">
+          <a href="https://discord.gg/p25FMkwu" target="_blank">
             <i class="fab fa-discord fa-lg mx-md-3 mx-2 fa-2x"></i>
           </a>
           <!-- Hive -->
-          <a href="https://peakd.com/@dlux-io" target="_blank">
+          <a href="https://peakd.com/@dbuzz" target="_blank">
             <img src="/img/peakd_logo.svg" class="responsive pb-3" width="40px">
           </a>
           <!--Twitter -->
-          <a href="https://twitter.com/dluxxr" target="_blank">
+          <a href="https://twitter.com/dbuzzapp" target="_blank">
             <i class="fab fa-twitter fa-lg mx-md-3 mx-2 fa-2x"></i>
           </a>
         </div>
@@ -29,8 +29,8 @@
   <!-- Footer Elements -->
 
   <!-- Copyright -->
-  <div class="footer-copyright bg-darker text-center text-white py-3">© 2020 Copyright: 
-    <a href="https://www.dlux.io/about/" class="">dlux.io</a>
+  <div class="footer-copyright bg-darker text-center text-white py-3">© 2022 Copyright:
+    <a href="https://d.buzz" class="">DBUZZ</a>
   </div>
   <!-- Copyright -->
 

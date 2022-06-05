@@ -491,7 +491,7 @@ AFRAME.registerState({
         loggedIn: false,
         loggedInImage: "https://cdn.glitch.com/5ba0e9a1-e1be-470c-be6c-b6bd1b8e349e%2FOTOLUX%20Tag.png?1528445998829",
         username: "Acquiring sync",
-        name: "Welcome to dlux",
+        name: "Welcome to DBUZZ Market",
         userImage: "https://cdn.glitch.com/5ba0e9a1-e1be-470c-be6c-b6bd1b8e349e%2FOTOLUX%20Tag.png?1528445998829",
         userCover: "",
         userRep: "",

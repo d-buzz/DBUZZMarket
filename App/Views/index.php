@@ -169,46 +169,7 @@
    include_once($path);
 ?>
 <main class="d-flex flex-column text-center flex-shrink-0">
-	<div id="dapps" class="d-flex flex-row px-2">
-		<div class="d-flex flex-column dlux-turq jumbo-dlux container p-5 m-auto">
-			<div class="dlux-header"><h1><span class="text-white">dlux is:</span> <span class="dlux-is">dApps</span></h1></div>
-			<div class="mt-2"><h5 class="text-white">2D, 3D, AR, VR, XR, ANYTHING</h5></div>
-			<div>
-				<a class="btn btn-dlux btn-lg btn-turq mt-2" href="/vr/">Enter Metaverse<i class="fas fa-vr-cardboard ml-2"></i></a>
-				<a class="btn btn-dlux btn-lg btn-outline-turq mt-2" href="/apps/">Browse dApps<i class="fab fa-wpexplorer ml-2"></i></a>
-			</div>
-		</div>
-	</div>
-	<div id="defi" class="d-flex flex-row px-2">
-		<div class="d-flex flex-column dlux-tang jumbo-dlux container p-5 m-auto">
-			<div class="dlux-header"><h1><span class="text-white">dlux is:</span> <span class="dlux-is">DeFi</span></h1></div>
-			<div class="mt-2"><h5 class="text-white">DECENTRALIZED TOKEN EXCHANGE</h5></div>
-			<div>
-				<a class="btn btn-dlux btn-lg btn-tang mt-2" href="/dex#dlux">Trade Tokens<i class="fas fa-store fa-fw ml-2"></i></a>
-				<a class="btn btn-dlux btn-lg btn-outline-tang mt-2" href="/new/node">Run A Node<i class="fas fa-robot fa-fw ml-2"></i></a>
-			</div>
-		</div>
-	</div>
-	<div id="hive" class="d-flex flex-row px-2">
-		<div class="d-flex flex-column hive jumbo-dlux container p-5 m-auto">
-			<div class="dlux-header"><h1><span class="text-white">dlux is:</span> <span class="dlux-is">Hive</span></h1></div>
-			<div class="mt-2"><h5 class="text-white">OWN YOUR ACCOUNT &amp; CONTENT</h5></div>
-			<div>
-				<a class="btn btn-dlux btn-lg btn-hive mt-2" href="https://signup.hive.io/" target="_blank">Get Account<i class="fab fa-fw fa-hive ml-2"></i></a>
-				<a class="btn btn-dlux btn-lg btn-outline-hive mt-2" href="#" data-toggle="modal" data-target="#loginModal">Login<i class="fas fa-fw fa-key ml-2"></i></a>
-			</div>
-		</div>
-	</div>
-	<div id="info" class="d-flex flex-row px-2">
-		<div class="d-flex flex-column dlux-purp jumbo-dlux container p-5 m-auto">
-			<div class="dlux-header"><h1><span class="text-white">dlux is:</span> <span class="dlux-is">Open</span></h1></div>
-			<div class="mt-2"><h5 class="text-white">LEARN MORE ABOUT THE PROJECT</h5></div>
-			<div>
-				<a class="btn btn-dlux btn-lg btn-purp mt-2" href="/about/">About Page<i class="fas fa-fw fa-info-circle ml-2"></i></a>
-				<a class="btn btn-dlux btn-lg btn-outline-purp mt-2" href="/docs/">Documentation<i class="fas fa-fw fa-book ml-2"></i></a>
-			</div>
-		</div>
-	</div>
+
 </main>
 <?php 
    $path = $_SERVER['DOCUMENT_ROOT'];

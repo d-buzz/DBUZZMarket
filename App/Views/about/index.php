@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" class="h-100">
 <head>
-<title>DLUX - About</title>
+<title>DBUZZ - About</title>
 <?php 
    $path = $_SERVER['DOCUMENT_ROOT'];
    $path .= "/mod/header.php";
@@ -77,16 +77,15 @@
        <div role="tabpanel" class="tab-pane fade show active" id="about" aria-labelledby="aboutTab">
 		   <div class="jumbotron container bg-darker text-left">
   				<h1 class="display-4 text-center">About</h1>
-  				<p class="lead text-center">Decentralized Limitless User Experiences</p>
+  				<p class="lead text-center">DBUZZ Market Decentralized Limitless User Experiences</p>
  				 <hr class="my-4 bg-light">
-			   	<h1 class="mb-4">Part Social. Part Crypto. Limitless User Experiences.</h1>
 			   <div class="py-3" style="border-bottom: solid; border-bottom-width: 2.5px; border-bottom-color: #191C20;">
 			   <h3 style="color: #0ED18C;">dApps: Decentralized Applications</h3>
- 				 <p>DLUX is an open source project built on the Hive blockchain that started as a way for users to build, post, and monetize virtual reality experiences without needing to know any code themselves. By leveraging networked A-Frame, visitor avatars spawn into social VR rooms with interconnecting portals to other places, all in-browser across mobile, headsets, and desktop computers. With full Hive wallet integration, the ability to purchase and tip became a reality for VR art galleries, AR menu systems, and 2D web dApps.</p>
+ 				 <p>DBUZZ Market was forked from DLUX an open source project built on the Hive blockchain.</p>
 			   </div>
 			   <div class="py-3" style="border-bottom: solid; border-bottom-width: 2.5px; border-bottom-color: #191C20;">
 			   	<h3 style="color: #FFA300;">DeFi: Decentralized Finance</h3>
-			   	 <p>As the project grew, the need for an oracle arose to control how user assets can be packaged, pinned, and distributed. Now much more than a decentralized metaverse, DLUX is a full DeFi (decentralized finance) solution. The DLUX token architecture includes the ability to time lock tokens for vote power or governance collateral, and a DEX (decentralized exchange) enables atomic swaps of assets between users. No central authority exists, instead the novel use of a DAO (decentralized autonomous organization) with governance collateral held in escrow by smart contracts ensures orders placed on the DEX are safe. The users maintain consensus in a deterministic way by reading the Hive chain block-by-block and broadcasting their response.</p>
+			   	 <p>DBUZZ Market is a full DeFi (decentralized finance) solution. The DLUX token architecture includes the ability to time lock tokens for vote power or governance collateral, and a DEX (decentralized exchange) enables atomic swaps of assets between users. No central authority exists, instead the novel use of a DAO (decentralized autonomous organization) with governance collateral held in escrow by smart contracts ensures orders placed on the DEX are safe. The users maintain consensus in a deterministic way by reading the Hive chain block-by-block and broadcasting their response.</p>
 			   </div>
 			   <div class="py-3" style="border-bottom: solid; border-bottom-width: 2.5px; border-bottom-color: #191C20;">
 			   	<h3 style="color:#FB00FF">S-NFTs: Smart Non Fungible Tokens</h3>
@@ -94,15 +93,15 @@
 			   </div>
 			   <div class="py-3" style="border-bottom: solid; border-bottom-width: 2.5px; border-bottom-color: #191C20;">
 			   <h3 style="color: #E31337;">Hive: Social Blockchain</h3>
-			   	 <p>Building on the blazing fast blockchain foundation of Hive, DLUX has been first to market with many exciting L2 (layer two) features already in public beta. Updates in closed alpha that are coming soon include a community controlled multi-signature wallet that will enable bridges to other cryptocurrencies, partial fill orders on the DEX (nonatomic swaps), and community proposals. Accounts holding DLUX Governance will be able to vote on code changes and how various community funds are spent.</p>
+			   	 <p>Building on the blazing fast blockchain foundation of Hive, the DLUX platform has been first to market with many exciting L2 (layer two) features already in public beta. Updates in closed alpha that are coming soon include a community controlled multi-signature wallet that will enable bridges to other cryptocurrencies, partial fill orders on the DEX (nonatomic swaps), and community proposals. Accounts holding DLUX Governance will be able to vote on code changes and how various community funds are spent.</p>
 			   </div>
 			   <div class="py-3" >
 			   <h3 style="color: #9300FF;">Open: Free</h3>
-			   <p>Move past a scarcity mindset by building on Hive, with no fees, and no code required. The barrier to entry for VR, dApps, and crypto projects is gone, making DLUX the most accessible dApp platform in the crypto space. And it's open source so anyone can improve the software or remix it for their projects.</p>
+			   <p>Move past a scarcity mindset by building on Hive, with no fees, and no code required. The barrier to entry for dApps, and crypto projects is gone, making DLUX the most accessible dApp platform in the crypto space. And it's open source so anyone can improve the software or remix it for their projects.</p>
 			   </div>
 			   	 <div class="d-flex flex-column col-md-6 mx-auto pt-5">
-			   <p class="lead text-center">If you're interested in building VR, or just chatting about the future, drop into our Discord server and say hi!</p>
- 				   <a class="btn btn-outline-primary btn-lg col-md-6 mx-auto" href="https://discord.gg/Beeb38j" target="_blank" role="button">Chat on Discord<i class="fab fa-discord fa-fw ml-2"></i></a></div>
+			   <p class="lead text-center">Drop into our Discord server and say hi!</p>
+ 				   <a class="btn btn-outline-primary btn-lg col-md-6 mx-auto" href="https://discord.gg/p25FMkwu" target="_blank" role="button">Chat on Discord<i class="fab fa-discord fa-fw ml-2"></i></a></div>
 			</div>
 		</div>
 		
@@ -275,11 +274,11 @@
 			   <div class="d-flex d-row">
 			   	<div class="d-flex flex-column col-md-4 p-5">
  				 <p class="lead">SVG: Logo</p>
-			   	 <img src="/img/dlux-hive-logo-alpha.svg">
+			   	 <img src="/img/Dbuzz_Logo_Bee_xdot_LogoShape.svg">
 					</div>
 				   <div class="d-flex flex-column col-md-4 p-5">
  				 <p class="lead">SVG: Icon</p>
-			   	 <img src="/img/dlux-hive-logo.svg">
+			   	 <img src="/img/Dbuzz_Logo_Bee_xdot_LogoShape.svg">
 					</div>
 				   <div class="d-flex flex-column col-md-4 p-5">
  				 <div class="lead">SVG: Hive XR</div>
@@ -289,11 +288,11 @@
 			   <div class="d-flex d-row">
 			   	<div class="d-flex flex-column col-md-4 p-5">
  				 <p class="lead">PNG: Logo</p>
-			   	 <img src="/img/dlux-logo.png" width="100%">
+			   	 <img src="/img/Dbuzz_Logo_Bee-695.png" width="100%">
 					</div>
 				   <div class="d-flex flex-column col-md-4 p-5">
  				 <p class="lead">PNG: Icon</p>
-			   	 <img src="/img/dlux-logo-icon.png" width="100%">
+			   	 <img src="/img/Dbuzz_Logo_Bee-695.png" width="100%">
 					</div>
 				   <div class="d-flex flex-column col-md-4 p-5">
  				 <div class="lead">PNG: Hive XR</div>
@@ -323,8 +322,8 @@
   				<h1 class="display-4 text-center">Privacy Policy</h1>
   				<p class="lead text-center">We believe in data privacy and transparency</p>
  				 <hr class="my-4 bg-light">
- 				 <p>The data you publish and access through DLUX is publicly available permanently on the Hive blockchain. Front ends like DLUX can hide content from users, and assets stored on IPFS can be garbage collected, but the record of the data is immutably saved forever.</p>
-			   <p>DLUX, acting as a front end, stores no user data. Login happens via the Hive Keychain extension, so user keys are never exposed to DLUX. A user session is stored locally, and DLUX does no user data tracking whatsoever.</p>
+ 				 <p>The data you publish and access through DBUZZ is publicly available permanently on the Hive blockchain. Front ends like DBUZZ can hide content from users, and assets stored on IPFS can be garbage collected, but the record of the data is immutably saved forever.</p>
+			   <p>DBUZZ, acting as a front end, stores no user data. Login happens via the Hive Keychain extension, so user keys are never exposed to DBUZZ. A user session is stored locally, and DBUZZ does no user data tracking whatsoever.</p>
  				 <div class="d-flex flex-column col-md-6 mx-auto pt-5">
 			   <p class="lead text-center">Would you like to learn more about how your data is stored and accessed via the Hive blockchain?</p>
  				   <a class="btn btn-outline-primary btn-lg col-md-6 mx-auto" href="https://hive.io/whitepaper.pdf" target="_blank" role="button">Hive Whitepaper<i class="fab fa-hive fa-fw ml-2"></i></a></div>
@@ -336,11 +335,11 @@
   				<h1 class="display-4 text-center">Terms of Service</h1>
   				<p class="lead text-center">What you can expect from us, and what we expect from you</p>
  				 <hr class="my-4 bg-light">
-			   <p>All DLUX software is MIT License Open Source. Report all bugs and issues via Discord.</p>
+			   <p>All DBUZZ software is MIT License Open Source. Report all bugs and issues via Discord.</p>
 			   <p>You are free to use the code for your own projects, and we encourage others to contribute improvements. We offer no warranty or gurantee and consider this software in public beta. Users are welcome to test, debug, provide feedback, and use at their own risk.</p>
  				 <div class="d-flex flex-column col-md-6 mx-auto pt-5">
 			   <p class="lead text-center">Would you like to audit the code, issue a pull request, clone the repo, or just have a look around?</p>
- 				   <a class="btn btn-outline-primary btn-lg col-md-6 mx-auto" href="https://github.com/dluxio/dluxio" target="_blank" role="button">Browse our Code<i class="fab fa-github fa-fw ml-2"></i></a></div>
+ 				   <a class="btn btn-outline-primary btn-lg col-md-6 mx-auto" href="https://github.com/d-buzz" target="_blank" role="button">Browse our Code<i class="fab fa-github fa-fw ml-2"></i></a></div>
 			</div>
 		</div>
 		
@@ -349,26 +348,18 @@
   				<h1 class="display-4 text-center">Technologies</h1>
   				<p class="lead text-center">Open Source Libraries</p>
  				 <hr class="my-4 bg-light">
-			   
-			   <div class="row align-items-center py-5" style="border-bottom: solid; border-bottom-width: 2.5px; border-bottom-color: #191C20;">
-							<div class="col-4 col-lg-2 text-center mx-auto my-5"><img src="/img/aframe.png" width="100%"></div>
-							<div class="col-lg-8 px-5">
-								<h3 style="color:#27BFF4">Networked A-Frame</h3>
-								<p>Build AR and VR scenes from simple tags that are responsive across mobile, desktop, and headset via HTML5 with teleport controls, touch controls, magic window looking, and keyboard + cursor controls. Start by using a drag and drop uploader or remixing a boiler plate project.</p>
-							</div>
-				   			<div class="col-lg-2 text-center"><a class="btn btn-outline-primary" href="https://aframe.io/" target="_blank">Learn More</a></div>
-			   </div>
+
 			   
 						<div class="row align-items-center py-5" style="border-bottom: solid; border-bottom-width: 2.5px; border-bottom-color: #191C20;">
 							<div class="col-4 col-lg-2 text-center mx-auto my-5"><img src="/img/ipfs-logo.svg" width="100%"></div>
 							<div class="col-lg-8 px-5">
 								<h3 style="color:#139192">InterPlanetary File System</h3>
-								<p>Distribute content peer-to-peer via the InterPlanetary File System (IPFS), with ultimate resiliancy and no file dupliation. Access your file from anywhere via it's finger print, or "hash" identity. DLUX pins uploaded content to avoid garbage collection.</p>
+								<p>Distribute content peer-to-peer via the InterPlanetary File System (IPFS), with ultimate resiliancy and no file dupliation. Access your file from anywhere via it's finger print, or "hash" identity. DBUZZ pins uploaded content to avoid garbage collection.</p>
 							</div>
 			   			<div class="col-lg-2 text-center"><a class="btn btn-outline-primary" href="https://ipfs.io/" target="_blank">Learn More</a></div>
 			   </div>
 						
-							<div class="row align-items-center py-5">
+							<div class="row align-items-center py-5" style="border-bottom: solid; border-bottom-width: 2.5px; border-bottom-color: #191C20;">
 								<div class="col-4 col-lg-2 text-center mx-auto my-5"><img src="/img/hextacular.svg" width="100%"></div>
 								<div class="col-lg-8 px-5">
 									<h3 style="color:#E31337">Hive Blockchain</h3>
@@ -376,6 +367,15 @@
 								</div>
 								<div class="col-lg-2 text-center"><a class="btn btn-outline-primary" href="https://hive.io/" target="_blank">Learn More</a></div>
 								</div>
+
+               <div class="row align-items-center py-5" style="border-bottom: solid; border-bottom-width: 2.5px; border-bottom-color: #191C20;">
+                   <div class="col-4 col-lg-2 text-center mx-auto my-5"><img src="/img/aframe.png" width="100%"></div>
+                   <div class="col-lg-8 px-5">
+                       <h3 style="color:#27BFF4">Networked A-Frame</h3>
+                       <p>Build AR and VR scenes from simple tags that are responsive across mobile, desktop, and headset via HTML5 with teleport controls, touch controls, magic window looking, and keyboard + cursor controls. Start by using a drag and drop uploader or remixing a boiler plate project.</p>
+                   </div>
+                   <div class="col-lg-2 text-center"><a class="btn btn-outline-primary" href="https://aframe.io/" target="_blank">Learn More</a></div>
+               </div>
 		
 			</div>
 		</div>

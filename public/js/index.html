@@ -23,14 +23,14 @@
         if (vars) {
             vararr = vars.split('&')
         } else {
-            location.href = 'https://www.dlux.io'
+            location.href = 'https://market.d.buzz'
         }
         author = varval('author', vararr),
             permlink = varval('permlink', vararr),
             hiveKey = `${author}/${permlink}`,
             hashy = varval('hash', vararr)
         if (!hashy) {
-            location.href = 'https://www.dlux.io'
+            location.href = 'https://market.d.buzz'
         }
         hive.api.getContent(author, permlink, (err, result) => {
             if (err) console.log(err)

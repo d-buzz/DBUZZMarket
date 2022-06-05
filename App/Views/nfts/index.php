@@ -170,7 +170,7 @@ include_once( $path );
           <div class="my-0 py-1 px-4 d-flex flex-column flex-wrap" style="background-color: rgba(0,0,0,1); border-radius: 15px 15px 0px 0px;">
             <div class="d-flex flex-row flex-fill align-items-center mt-2 mb-2">
               <div class="d-flex align-items-center">
-                <div class="circle2 d-flex align-items-center justify-content-around"><img src="/img/dlux-hive-logo-alpha.svg" width="70%"></div>
+                <div class="circle2 d-flex align-items-center justify-content-around"><img src="/img/Dbuzz_Logo_Bee_xdot_LogoShape.svg" width="70%"></div>
                 <h2 class="p-0 m-0 ml-2 font-weight-bold" >DLUX</h2>
               </div>
               <div class="ml-auto"><a href="/about/" style="color:silver">About<i class="fas fa-info-circle ml-2"></i></a></div>
@@ -277,7 +277,7 @@ include_once( $path );
                         </div>
                         <div class="d-flex flex-row flex-fill mt-1 align-items-center">
                           <div class="d-flex align-items-center">
-                            <div class="circle2 d-flex align-items-center justify-content-around"><img src="/img/dlux-hive-logo-alpha.svg" width="70%"></div>
+                            <div class="circle2 d-flex align-items-center justify-content-around"><img src="/img/Dbuzz_Logo_Bee_xdot_LogoShape.svg" width="70%"></div>
                             <h2 class="p-0 m-0 ml-2 font-weight-bold">DLUX</h2>
                           </div>
                           <div class="d-flex ml-auto">
