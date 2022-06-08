@@ -1,48 +1,21 @@
 <!doctype html>
 <html lang="en" class="h-100">
-<head>
-<title>DBUZZ Market - Documentation</title>
-<?php 
-   $path = $_SERVER['DOCUMENT_ROOT'];
-   $path .= "/mod/header.php";
-   include_once($path);
-?>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
-<script src="https://cdn.jsdelivr.net/npm/@hiveio/hive-js/dist/hive.min.js"></script>
-    <script src="../js/session.js" type="application/javascript"></script>
-</head>
+<!-- header -->
+<?php include_once($_SERVER['DOCUMENT_ROOT'] . "/mod/docs/header.php") ?>
 <body class="d-flex flex-column h-100 padme-t70">
-<a class="skippy sr-only sr-only-focusable" href="#content">
-  <span class="skippy-text">Skip to main content</span>
-</a>
-<?php 
-   $path = $_SERVER['DOCUMENT_ROOT'];
-   $path .= "/mod/nav.php";
-   include_once($path);
-?>
-    <div class="container-fluid text-white-50">
-
+<!-- navbar -->
+<?php include_once($_SERVER['DOCUMENT_ROOT'] . "/mod/nav.php") ?>
+<div class="container-fluid text-white-50">
+    <div class="row flex-xl-nowrap">
+        <!-- left nav -->
+        <?php include_once($_SERVER['DOCUMENT_ROOT'] . "/mod/docs/left-nav.php") ?>
+        <!-- doc-content -->
+        <?php include_once($_SERVER['DOCUMENT_ROOT'] . "/mod/docs/doc-content.php") ?>
     </div>
-<?php 
-   $path = $_SERVER['DOCUMENT_ROOT'];
-   $path .= "/mod/footer.php";
-   include_once($path);
-?>
-<script>
-$('#expand').on('click', function () {
-$('#accordion .collapse').collapse('show');
-});
-$('#collapse').on('click', function () {
-$('#accordion .collapse').collapse('hide');
-});
-</script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
-<script type="text/javascript"> docsearch({
-apiKey: '61a41f1f483bb427deded79575d31c9a',
-indexName: 'dlux',
-inputSelector: '#search-input',
-debug: false // Set debug to true if you want to inspect the dropdown
-});
-</script>
-
-</body></html>
+</div>
+<!-- footer -->
+<?php include_once($_SERVER['DOCUMENT_ROOT'] . "/mod/footer.php") ?>
+<!-- script -->
+<?php include_once($_SERVER['DOCUMENT_ROOT'] . "/mod/docs/script.php") ?>
+</body>
+</html>

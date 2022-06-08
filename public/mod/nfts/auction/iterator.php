@@ -1,0 +1,1 @@
+<dmx-data-iterator id="auctions_iterator" dmx-bind:data="auctionsview.data" loop="true"></dmx-data-iterator>

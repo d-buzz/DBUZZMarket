@@ -1,0 +1,1 @@
+<dmx-data-iterator id="sales_iterator" dmx-bind:data="salesview.data" loop="true"></dmx-data-iterator>
