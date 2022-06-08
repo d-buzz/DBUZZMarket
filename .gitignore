@@ -119,7 +119,6 @@ dist
 !cache/
 cache/*
 logs/*.log
-composer.lock
 vendor/symfony/polyfill-ctype/bootstrap.php
 vendor/symfony/polyfill-ctype/composer.json
 vendor/symfony/polyfill-ctype/Ctype.php
@@ -133,11 +132,6 @@ vendor/symfony/polyfill-mbstring/README.md
 vendor/symfony/polyfill-mbstring/Resources/unidata/lowerCase.php
 vendor/symfony/polyfill-mbstring/Resources/unidata/titleCaseRegexp.php
 vendor/symfony/polyfill-mbstring/Resources/unidata/upperCase.php
-composer.lock
-vendor/composer/autoload_real.php
-vendor/composer/ClassLoader.php
-vendor/composer/installed.json
-vendor/composer/LICENSE
 App/Views/dlux/_notes/dwsync.xml
 App/Views/me/_notes/dwsync.xml
 public/js/_notes/dwsync.xml
@@ -145,13 +139,4 @@ App/Views/dex/_notes/dwsync.xml
 App/Views/dex/.DS_Store
 public/img/.DS_Store
 public/css/_notes/dwsync.xml
-composer.lock
-vendor/composer/autoload_classmap.php
-vendor/composer/autoload_files.php
-vendor/composer/autoload_namespaces.php
-vendor/composer/autoload_psr4.php
-vendor/composer/autoload_real.php
-vendor/composer/autoload_static.php
-vendor/composer/ClassLoader.php
-vendor/composer/installed.json
-vendor/composer/LICENSE
+
