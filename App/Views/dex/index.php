@@ -1,18 +1,10 @@
 <!doctype html>
 <html lang="en" class="h-100">
-
-<?php
-    $path = $_SERVER['DOCUMENT_ROOT'];
-    $path .= "/mod/dex/header.php";
-    include_once($path);
-?>
-
+<!-- header -->
+<?php include_once($_SERVER['DOCUMENT_ROOT'] . "/mod/dex/header.php") ?>
 <body class="d-flex flex-column bg-darker text-white h-100 padme-t70" id="index">
-  <?php
-  $path = $_SERVER['DOCUMENT_ROOT'];
-  $path .= "/mod/nav.php";
-  include_once($path);
-  ?>
+  <!-- navbar -->
+  <?php include_once($_SERVER['DOCUMENT_ROOT'] . "/mod/nav.php") ?>
   <div id="app">
     <main role="main" class="flex-shrink-0 text-white">
       <div class="container-fluid px-0 ">
@@ -21,134 +13,53 @@
             <div class="d-flex align-itmes-center justify-content-between w-100">
               <div class="d-flex align-items-center">
                   <!-- token select -->
-                  <?php
-                  $path = $_SERVER['DOCUMENT_ROOT'];
-                  $path .= "/mod/dex/token/tokenselect.php";
-                  include_once($path);
-                  ?>
-
+                  <?php include_once($_SERVER['DOCUMENT_ROOT'] . "/mod/dex/token/tokenselect.php") ?>
                   <!-- node settings form -->
-                  <?php
-                  $path = $_SERVER['DOCUMENT_ROOT'];
-                  $path .= "/mod/dex/node/nodesettingsform.php";
-                  include_once($path);
-                  ?>
-
+                    <?php include_once($_SERVER['DOCUMENT_ROOT'] . "/mod/dex/node/nodesettingsform.php") ?>
                   <!-- node status btn -->
-                  <?php
-                  $path = $_SERVER['DOCUMENT_ROOT'];
-                  $path .= "/mod/dex/node/nodestatusbtn.php";
-                  include_once($path);
-                  ?>
+                    <?php include_once($_SERVER['DOCUMENT_ROOT'] . "/mod/dex/node/nodestatusbtn.php") ?>
               </div>
-
               <div class="d-flex align-items-center">
                   <!-- claim tokens form -->
-                  <?php
-                  $path = $_SERVER['DOCUMENT_ROOT'];
-                  $path .= "/mod/dex/token/claimtokensform.php";
-                  include_once($path);
-                  ?>
+                  <?php include_once($_SERVER['DOCUMENT_ROOT'] . "/mod/dex/token/claimtokensform.php") ?>
               </div>
-
               <div class="d-flex align-items-center text-white-50">
                   <!-- send token form -->
-                  <?php
-                  $path = $_SERVER['DOCUMENT_ROOT'];
-                  $path .= "/mod/dex/token/sendtokenform.php";
-                  include_once($path);
-                  ?>
-
+                  <?php include_once($_SERVER['DOCUMENT_ROOT'] . "/mod/dex/token/sendtokenform.php") ?>
                   <!-- power form -->
-                  <?php
-                  $path = $_SERVER['DOCUMENT_ROOT'];
-                  $path .= "/mod/dex/gov/powerform.php";
-                  include_once($path);
-                  ?>
-
+                  <?php include_once($_SERVER['DOCUMENT_ROOT'] . "/mod/dex/gov/powerform.php") ?>
                   <!-- gov form -->
-                  <?php
-                  $path = $_SERVER['DOCUMENT_ROOT'];
-                  $path .= "/mod/dex/gov/govform.php";
-                  include_once($path);
-                  ?>
-
+                  <?php include_once($_SERVER['DOCUMENT_ROOT'] . "/mod/dex/gov/govform.php") ?>
                   <!-- send hive form -->
-                  <?php
-                  $path = $_SERVER['DOCUMENT_ROOT'];
-                  $path .= "/mod/dex/hive/sendhiveform.php";
-                  include_once($path);
-                  ?>
-
+                  <?php include_once($_SERVER['DOCUMENT_ROOT'] . "/mod/dex/hive/sendhiveform.php") ?>
                   <!-- send hbd form -->
-                  <?php
-                  $path = $_SERVER['DOCUMENT_ROOT'];
-                  $path .= "/mod/dex/hive/sendhbdform.php";
-                  include_once($path);
-                  ?>
+                  <?php include_once($_SERVER['DOCUMENT_ROOT'] . "/mod/dex/hive/sendhbdform.php") ?>
               </div>
             </div>
-
               <!-- node collapse region -->
-              <?php
-              $path = $_SERVER['DOCUMENT_ROOT'];
-              $path .= "/mod/dex/node/nodecollapseregion.php";
-              include_once($path);
-              ?>
-
+                <?php include_once($_SERVER['DOCUMENT_ROOT'] . "/mod/dex/node/nodecollapseregion.php") ?>
           </div>
         </div>
         <div class="container text-white" style="margin-top: 50px;">
           <!-- current token tick -->
-            <?php
-            $path = $_SERVER['DOCUMENT_ROOT'];
-            $path .= "/mod/dex/token/currenttokentick.php";
-            include_once($path);
-            ?>
+            <?php include_once($_SERVER['DOCUMENT_ROOT'] . "/mod/dex/token/currenttokentick.php") ?>
           <!-- market stats -->
-            <?php
-            $path = $_SERVER['DOCUMENT_ROOT'];
-            $path .= "/mod/dex/market/marketstats.php";
-            include_once($path);
-            ?>
+            <?php include_once($_SERVER['DOCUMENT_ROOT'] . "/mod/dex/market/marketstats.php") ?>
           <!-- market chart -->
-            <?php
-            $path = $_SERVER['DOCUMENT_ROOT'];
-            $path .= "/mod/dex/market/marketchart.php";
-            include_once($path);
-            ?>
+            <?php include_once($_SERVER['DOCUMENT_ROOT'] . "/mod/dex/market/marketchart.php") ?>
           <!-- trade forms -->
-            <?php
-            $path = $_SERVER['DOCUMENT_ROOT'];
-            $path .= "/mod/dex/market/tradeforms.php";
-            include_once($path);
-            ?>
+            <?php include_once($_SERVER['DOCUMENT_ROOT'] . "/mod/dex/market/tradeforms.php") ?>
           <!-- HIVE orders -->
-            <?php
-            $path = $_SERVER['DOCUMENT_ROOT'];
-            $path .= "/mod/dex/hive/hiveorders.php";
-            include_once($path);
-            ?>
+            <?php include_once($_SERVER['DOCUMENT_ROOT'] . "/mod/dex/hive/hiveorders.php") ?>
           <!-- HBD orders -->
-            <?php
-            $path = $_SERVER['DOCUMENT_ROOT'];
-            $path .= "/mod/dex/hive/hbdorders.php";
-            include_once($path);
-            ?>
+            <?php include_once($_SERVER['DOCUMENT_ROOT'] . "/mod/dex/hive/hbdorders.php") ?>
         </div>
       </div>
     </main>
   </div>
-    <?php
-    $path = $_SERVER['DOCUMENT_ROOT'];
-    $path .= "/mod/footer.php";
-    include_once($path);
-    ?>
+  <!-- footer -->
+    <?php include_once($_SERVER['DOCUMENT_ROOT'] . "/mod/footer.php") ?>
 </body>
-    <?php
-    $path = $_SERVER['DOCUMENT_ROOT'];
-    $path .= "/mod/dex/script.php";
-    include_once($path);
-    ?>
-
+  <!-- script -->
+    <?php include_once($_SERVER['DOCUMENT_ROOT'] . "/mod/dex/script.php") ?>
 </html>
