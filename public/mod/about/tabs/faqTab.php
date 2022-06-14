@@ -8,6 +8,6 @@
         <p class="lead">What are dApps?</p>
         <p>Decentralized Applications are pieces of software that can run outside of centralized servers and app stores. They are resiliant in their ability to be distributed peer-to-peer, and their minimization on external dependencies.</p>
         <p class="lead">What is a DEX?</p>
-        <p>A Decentralized EXchange is a market to swap assets that has no centralized account holding the assets or user keys, and instead escrows agent collateral to cover the cost of trades.</p>
+        <p>A Decentralized Exchange is a market to swap assets that has no centralized account holding the assets or user keys, and instead escrows agent collateral to cover the cost of trades.</p>
     </div>
 </div>
