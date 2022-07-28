@@ -16,7 +16,7 @@
           </a>
           <!-- Hive -->
           <a href="https://peakd.com/@dbuzz" target="_blank">
-            <img src="/img/peakd_logo.svg" class="responsive pb-3" width="40px">
+            <img src="/img/peakd_logo.svg" class="responsive pb-3" width="28px" style="height: 34px;margin-top: 10px;">
           </a>
           <!--Twitter -->
           <a href="https://twitter.com/dbuzzapp" target="_blank">
